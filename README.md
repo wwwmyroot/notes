@@ -10,12 +10,22 @@
 
 * film
 
-  http://kinokong.net/16078-ad-dante-animirovannyy-epos-2010.html  
-  http://kinograd.tv/2427-strana-oz-2015.html  
-
 * git
 
   https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell  
   https://git-scm.com/docs/git-rebase  
   https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches  
   http://nvie.com/posts/a-successful-git-branching-model/  
+
+* subl
+  diff
+  http://www.hongkiat.com/blog/sublime-text-plugins/
+  http://www.slant.co/topics/2030/~diff-plugins-for-sublime-text
+  http://subharanjan.com/integrate-diffmerge-with-sublime-text-comparing-files/
+
+
+* VFX
+  http://www.vfxplatform.com/
+  http://opencolorio.org/
+  https://sites.google.com/site/openimageio/home
+  http://natron.fr/
