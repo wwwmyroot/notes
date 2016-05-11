@@ -1,5 +1,18 @@
 ### links
 
+* Screen \ Lean
+
+  http://scrum.org.ua/wp-content/uploads/ScrumAndKanbanRuFinal.pdf
+
+  http://clojure-doc.org/articles/content.html#essentials
+  https://github.com/igeldev/clojure-site-russian/blob/draft/clojure-site-ru/content/reference/repl_and_main.adoc
+  http://alexott.net/ru/clojure/
+  http://alexott.net/ru/fp/
+  http://theleanstartup.com/principles
+  https://runningleaninrussian.wordpress.com/
+  http://ieci.ru/files/80/leancanvasrus-130826053129-phpapp01.pdf
+  https://habrahabr.ru/post/243263/
+
 * ssh
 
   http://blog.joncairns.com/2013/12/understanding-ssh-agent-and-ssh-add/  
@@ -8,8 +21,6 @@
   http://superuser.com/questions/141044/sharing-the-same-ssh-agent-among-multiple-login-sessions  
   http://mah.everybody.org/docs/ssh  
 
-* film
-
 * git
 
   https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell  
@@ -17,8 +28,7 @@
   https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches  
   http://nvie.com/posts/a-successful-git-branching-model/  
 
-* subl
-  diff
+* subl \ diff
   http://www.hongkiat.com/blog/sublime-text-plugins/
   http://www.slant.co/topics/2030/~diff-plugins-for-sublime-text
   http://subharanjan.com/integrate-diffmerge-with-sublime-text-comparing-files/
