@@ -1,5 +1,13 @@
 ### links
 
+* Redmine
+  https://github.com/sameersbn/docker-redmine
+  https://hub.docker.com/_/redmine/
+  https://hub.docker.com/r/sameersbn/redmine/~/dockerfile/
+  https://www.damagehead.com/docker-redmine/
+
+
+
 * Screen \ Lean
 
   http://scrum.org.ua/wp-content/uploads/ScrumAndKanbanRuFinal.pdf
