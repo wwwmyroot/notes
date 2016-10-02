@@ -1,4 +1,12 @@
 ### links
+* Clojure
+  ** Lectyres
+  http://clojurecourse.by/
+  http://tonsky.me/
+  
+  ** DataScript
+  https://github.com/tonsky/datascript
+  https://vimeo.com/114688970
 
 * Redmine
   https://github.com/sameersbn/docker-redmine
