@@ -3,14 +3,26 @@
   * Lectures
   
   http://clojurecourse.by/
-  
   http://tonsky.me/
   
   * DataScript
   
   https://github.com/tonsky/datascript
-  
   https://vimeo.com/114688970
+
+ * to sort to read
+  http://alexott.net/ru/clojure/clojure-intro/
+  https://habrahabr.ru/post/204992/
+  https://habrahabr.ru/post/263115/
+  http://thenewweb.ru/2015/12/clojure-%D0%B8-mysql-%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B5-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8/
+  http://thenewweb.ru/category/%D0%B1%D0%B0%D0%B7%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85/
+  http://www.w3ii.com/ru/clojure/clojure_libraries.html
+  http://xgu.ru/wiki/Clojure
+  http://clojurecourse.by/
+  https://publib.boulder.ibm.com/html/as400/v4r5/ic2979/info/java/rzaid/clnjdbc.htm
+  http://clojure.by/articles/2016-07/why-not-haskell
+ 
+ 
 
 ### Redmine
   
