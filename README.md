@@ -20,6 +20,31 @@
   
   http://www.flyingmachinestudios.com/programming/datomic-for-five-year-olds/
 
+ * Dashboard
+ 
+ https://github.com/multunus/dashboard-clj
+ 
+ * multunus
+ 
+ It is not that hard at all! In fact, there exist great libraries which solve all the challenges involved in building a dashboard - scheduling, caching, transferring data to the client, visualization(and auto reloading).
+
+We are working on a framework for building realtime Clojure dashboard. Have a look at <a href="https://github.com/multunus/dashboard-clj" rel="nofollow">https://github.com/multunus/dashboard-clj.
+We have used the following libraries:</p>
+
+<ul>
+<li><a href="http://immutant.org/tutorials/scheduling/" rel="nofollow">Immutant's scheduler</a> for scheduling</li>
+<li><a href="https://github.com/clojure/core.async" rel="nofollow">Core.async</a> to simplify data flow on the backend</li>
+<li><a href="https://github.com/ptaoussanis/sente" rel="nofollow">Sente</a> for websocket communication</li>
+<li><a href="https://github.com/Day8/re-frame" rel="nofollow">re-frame</a> for client side state and view management</li>
+<li>Stuart Sierra's <a href="https://github.com/stuartsierra/component" rel="nofollow">component library</a> for managing stateful components</li>
+</ul>
+
+<p>In order to create beautiful visualizations you may take a look at d3 or highcharts. <a href="http://cljsjs.github.io/" rel="nofollow">CLJSJS</a> and <a href="https://github.com/reagent-project/reagent-cookbook" rel="nofollow">Reagent cookbook</a> will gives a good overview of how to use these js libraries(and many many more).</p>
+    </div>
+ 
+  https://github.com/puppetlabs/cljs-dashboard-widgets
+ 
+ * --- --- --- 
  * to sort to read
   http://alexott.net/ru/clojure/clojure-intro/
   
