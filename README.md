@@ -11,6 +11,14 @@
   https://github.com/tonsky/datascript
   
   https://vimeo.com/114688970
+  
+  * Datomic
+  
+  http://docs.datomic.com/index.html
+  
+  http://docs.datomic.com/clojure/
+  
+  http://www.flyingmachinestudios.com/programming/datomic-for-five-year-olds/
 
  * to sort to read
   http://alexott.net/ru/clojure/clojure-intro/
