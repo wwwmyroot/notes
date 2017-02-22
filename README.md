@@ -66,7 +66,23 @@ We have used the following libraries:</p>
   
   http://clojure.by/articles/2016-07/why-not-haskell
  
- 
+### Code pen
+
+  Drag an event from FullCalendar to trash or back to external list
+  http://codepen.io/subodhghulaxe/pen/qEXLLr
+  
+  Plan Line
+  http://codepen.io/drhees/pen/vnGeK
+  
+  Project Timeline
+  http://codepen.io/russelllighthouse/pen/pRXyqW
+  
+  Checkbox Trickery: To-Do List
+  http://codepen.io/lonekorean/pen/xGLLwX
+
+  3D Solar System
+  http://codepen.io/juliangarnier/pen/idhuG
+
 
 ### Redmine
   
@@ -77,6 +93,13 @@ We have used the following libraries:</p>
   https://hub.docker.com/r/sameersbn/redmine/~/dockerfile/
   
   https://www.damagehead.com/docker-redmine/
+
+### Project tools
+
+  https://prj.aha.io/
+  
+  https://prj.aha.io/products/PRJOFFICE/strategic_imperatives
+
 
 ### Screen \ Lean
 
