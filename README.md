@@ -99,7 +99,13 @@ We have used the following libraries:</p>
   https://prj.aha.io/
   
   https://prj.aha.io/products/PRJOFFICE/strategic_imperatives
+  
+  Linux soft:
+  http://taskjuggler.org/
 
+  https://sourceforge.net/projects/openproj/
+  
+  http://www.projectlibre.com/
 
 ### Screen \ Lean
 
