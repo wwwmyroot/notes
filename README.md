@@ -112,6 +112,12 @@ We have used the following libraries:</p>
 
 https://github.com/FormidableLabs/victory
 
+### Site generator
+#### from clojure.com engine (https://clojure.org)
+
+http://jbake.org/
+http://jbake.org/news/jbake-v2-5-1-released.html
+
 ### Redmine
   
   https://github.com/sameersbn/docker-redmine
