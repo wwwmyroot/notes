@@ -54,6 +54,21 @@ We have used the following libraries:</p>
  
   https://github.com/puppetlabs/cljs-dashboard-widgets
  
+ * WiKi written in Clojure
+ *** A wiki made with Clojure, yada and Datomic Client
+ https://github.com/thegeez/clj-wiki
+ 
+ http://thegeez.net/2017/01/04/wiki_clojure_yada_datomic_client.html
+ 
+ *** Yet another WiKi written in Clojure 
+ 
+ https://github.com/pamu/wiki
+ 
+ * Clj data generator
+ 
+ https://github.com/clojure/data.generators
+ 
+ 
  * --- --- --- 
  * to sort to read
   http://alexott.net/ru/clojure/clojure-intro/
@@ -93,6 +108,9 @@ We have used the following libraries:</p>
   3D Solar System
   http://codepen.io/juliangarnier/pen/idhuG
 
+### Data vizualisation
+
+https://github.com/FormidableLabs/victory
 
 ### Redmine
   
