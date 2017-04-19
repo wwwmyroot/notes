@@ -6,6 +6,16 @@
   
   http://tonsky.me/
   
+  * Chrome app
+  *** DevDoc (API)
+  DevDocs combines multiple API documentations in a fast, organized, and searchable interface. 
+  
+  http://devdocs.io/
+  
+  https://chrome.google.com/webstore/detail/devdocs/mnfehgbmkapmjnhcnbodoamcioleeooe/related?hl=ru
+  
+  https://github.com/Thibaut/devdocs/
+  
   * DataScript
   
   https://github.com/tonsky/datascript
