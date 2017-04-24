@@ -109,8 +109,25 @@ We have used the following libraries:</p>
   http://codepen.io/juliangarnier/pen/idhuG
 
 ### Data vizualisation
+https://github.com/showcases/data-visualization
 
 https://github.com/FormidableLabs/victory
+
+Cool
+https://github.com/dc-js
+http://dc-js.github.io/dc.js/
+http://square.github.io/crossfilter/
+http://timelyportfolio.github.io/rCharts_crossfilter_dcjs/signal_slidify_withcumul.html
+http://epochjs.github.io/epoch/real-time/#bar
+
+graph nodes
+http://sigmajs.org/
+
+coll feel
+https://www.metricsgraphicsjs.org/examples.htm
+
+JS
+http://www.chartjs.org/
 
 ### Site generator
 #### from clojure.com engine (https://clojure.org)
