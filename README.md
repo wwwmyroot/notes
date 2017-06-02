@@ -162,6 +162,15 @@ https://netflix.github.io/conductor/
 * https://prj.aha.io/
 * https://prj.aha.io/products/PRJOFFICE/strategic_imperatives
 -----
+### Collaborative doc edit
+#### Etherpad
+* http://etherpad.org/#
+* https://github.com/ether
+##### Sites that use Etherpad
+* https://pad.riseup.ne
+* https://beta.etherpad.org
+* https://github.com/ether/etherpad-lite/wiki/Sites-that-run-Etherpad-Lite
+-----
 ### Linux soft:
 * https://taskjuggler.org/
 * https://sourceforge.net/projects/openproj/
