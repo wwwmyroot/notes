@@ -1,0 +1,280 @@
+~ i3 windows manager
+2020-01-20
+
+-- -- --
+
+  zypper install i3
+  logout
+  coose i3 as WM
+  set "Win" key as modyfing key
+
+-- -- -- 
+
+* keys
+
+  :Open_xTerm:
+  
+    Win + Enter
+
+  :Close_window:
+  
+    Win + Shift + q
+
+  :Modes: 
+  
+    Tiling mode
+      Win + e
+    Stack mode
+      Win + s
+    Tab mode
+      Win + w
+    Resize mode
+      Win + r  ( + arrow key)
+
+  :Swap_contence:
+  
+    swap or move  contense to nearer window:
+    Win + Shift + {arrow key}
+
+  :Workspace:
+  
+    To sent window to the other workspace
+      Win + Shift + {number}
+
+    To switch to the proper workspace
+      Win + {number}
+
+  :Logout:
+  
+    Win + Shift + e
+
+  :Programs_choose:
+  
+    Programs - system menu
+      Win + d
+
+  :Lock_screen:
+  
+    open terminal and run command: i3lock
+
+* Useful to install
+
+  broot       (terminal tool to navigate directories)
+  arandr      GUI to connect & set of a different monitors 
+  playerctl   (for buttons volume control)
+  rythmbox    (mediaplayer)
+  alsa        (audio mixer for interactive controls)
+  
+* key bindings
+
+  file /user/al/.13/config
+
+  to lock screen
+    bindsym $mod+shift+x exec i3lock
+   
+   to run command every time of restsr
+    exec_always
+
+* set volume 100%
+
+  amixer sset 'Master' 100%
+
+* broot - a new tool for directory navigation
+  
+  https://github.com/Canop/broot
+
+* WiFi connect
+  
+  # sudo nmcli device wifi list
+
+  to connect to hidden WiFi (password with no double commas)
+  # sudo nnmcli device wifi connect "{{Name-of-wifi_SSID}}" password 12345 "{{what name to see in my list}}" hidden yes
+
+* GIT
+
+  ** GIT config
+
+    # My Gitconfig file 2016-03-11 (linux)
+    # [[/home/al/.gitconfig]]
+    [core]
+    symlinks = false
+    autocrlf = false
+    safecrlf = false
+    # editor = '∕opt∕sublime_text∕sublime_text' -w
+    pager = less -r
+    [user]
+    name = 
+    email = 
+    [color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = true
+    ui = true
+    [pack]
+    packSizeLimit = 2g
+    [help]
+    format = html
+    [diff "astextplain"]
+    textconv = astextplain
+    [rebase]
+    autosquash = true
+    [alias]
+    a = add --all
+    b = branch -a
+    bb = branch -r
+    c = commit -m
+    co = checkout
+    # i = 
+    r = remote -v
+    rr = remote show origin
+    s = status
+
+    # my standart log --all
+    l = log --all --graph --date=short --pretty=format:'%C(yellow bold) %h %C(blue bold)|%C(cyan) %ad %C(blue bold)|%Creset %s %C(magenta bold)--%C(green bold)%d %C(cyan bold) [%an]%Creset'
+    # with yellow comments
+    #   l = log --all --graph --date=short --pretty=format:'%C(yellow bold) %h %C(blue bold)|%C(cyan) %ad %C(blue bold)|%C(yellow bold) %s %C(magenta bold)--%C(green bold)%d %C(cyan bold) [%an]%Creset'
+
+    # my standart log minus --all
+    ll = log --graph --date=short --pretty=format:'%C(yellow bold) %h %C(blue bold)|%C(cyan) %ad %C(blue bold)|%Creset %s %C(magenta bold)--%C(green bold)%d %C(cyan bold) [%an]%Creset'
+
+    lll = log --graph --pretty=format:'%C(yellow bold) %h %C(blue bold)|%C(cyan) %ai %C(blue bold)|%Creset %s  -%C(green bold) %d %C(cyan bold) [%an]'
+
+    # with branch-name column & relative date (no user name)
+    llll = "!f() { git log --graph --pretty=format:'%C(yellow bold) %h%C(blue bold)|%C(red bold)%H%Creset - %s - %C(green bold)%d%  %C(cyan)(%cr)%Creset' --date=relative $@ | git name-rev --stdin --name-only ; } ; f"
+
+    # with brabch-name column & relative date (with user name)
+    # llll = "!f() { git log --graph --pretty=format:'%C(yellow bold) %h %C(blue bold)|%C(red bold)%H%Creset - %s - %C(green bold)%d%   %C(magenta)(%cr) %C(cyan)<%an>%Creset' --date=relative $@ | git name-rev --stdin --name-only ; } ; f"
+
+    # with list of files and statistics
+    lllll = log --graph --oneline --decorate --stat --abbrev-commit
+
+    # to test
+    # y = diff "@{yesterday}"
+    # w = whatchanged
+    # dc = diff --cached
+
+* github
+
+  ** create an ssh key pair
+      # ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+      :note: (leave standart file name "id_rsa" and do not type passphrase; locate to ~/.ssh/id_rsa)
+
+      run ssh & add keys
+      # eval "$(ssh-agent -s)" && ssh-add ~/.ssh/{{name-of-key-file}}
+
+    ** add pub-key to a github account
+    
+      go to github account and  copy-paste contense of a .pub file to account in a github (menu Settings -> SSH keys)
+
+    ** to test connection:
+      # ssh -T git@github.com
+
+    *** git acc
+
+      wwwmyroot@gmail.com
+      1-reVO
+
+    *** sys acc
+      al
+      1-e --round---> SSHHIIFF
+
+      root
+      1-d --round---> SSHHIIFF
+
+  * Install SublimeText3
+
+    # sudo rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
+    # sudo zypper install sublime-text
+
+  * youtube-dl
+
+    youtube-dl_list
+    :NAME:
+
+    screen -dmS dl1 youtube-dl --yes-playlist -vif 18 -o "./%(playlist)s/%(autonumber)s-%(title)s.%(ext)s" '' && 
+    screen -ls && 
+    screen -dmS dl12 youtube-dl --yes-playlist -vif 18 -o "./%(playlist)s/%(autonumber)s-%(title)s.%(ext)s" '' && 
+    screen -ls && 
+    screen -dmS dl3 youtube-dl --yes-playlist -vif 18 -o "./%(playlist)s/%(autonumber)s-%(title)s.%(ext)s" '' && 
+    screen -ls && 
+    screen -dmS dl4 youtube-dl --yes-playlist -vif 18 -o "./%(playlist)s/%(autonumber)s-%(title)s.%(ext)s" '' && 
+    screen -ls && 
+    screen -dmS dl5 youtube-dl --yes-playlist -vif 18 -o "./%(playlist)s/%(autonumber)s-%(title)s.%(ext)s" '' && 
+    screen -ls && 
+    screen -dmS dl6 youtube-dl --yes-playlist -vif 18 -o "./%(playlist)s/%(autonumber)s-%(title)s.%(ext)s" '' && 
+    screen -ls && 
+    screen -dmS dl7 youtube-dl --yes-playlist -vif 18 -o "./%(playlist)s/%(autonumber)s-%(title)s.%(ext)s" '' && 
+    screen -ls && 
+    screen -dmS dl8 youtube-dl --yes-playlist -vif 18 -o "./%(playlist)s/%(autonumber)s-%(title)s.%(ext)s" '' && 
+    screen -ls && 
+    screen -dmS dl9 youtube-dl --yes-playlist -vif 18 -o "./%(playlist)s/%(autonumber)s-%(title)s.%(ext)s" '' && 
+    screen -ls && 
+    screen -dmS dl1o youtube-dl --yes-playlist -vif 18 -o "./%(playlist)s/%(autonumber)s-%(title)s.%(ext)s" '' && 
+    screen -ls && 
+    screen -dmS dl11 youtube-dl --yes-playlist -vif 18 -o "./%(playlist)s/%(autonumber)s-%(title)s.%(ext)s" '' && 
+    screen -ls && 
+
+    ** youtube-dl 2
+    
+      screen -dmS dl1 youtube-dl --yes-playlist -vif 18 -o "./%(playlist)s/%(autonumber)s-%(title)s.%(ext)s" '<playlist_address>'
+
+    ** youtube-dl 3
+
+      youtube-dl_syn
+
+      screen -dmS dl1 youtube-dl --yes-playlist -vif 18 -o "./%(playlist)s/%(autonumber)s-%(title)s.%(ext)s" '<playlist_address>'
+
+      ** hot
+
+        - any playlist in it's own folder (or remove /%(playlist)s  ), autonumber
+          # screen -dmS dl1 youtube-dl --yes-playlist -vif <NUMBER_V_QUALITY> -o "<PATH_TO_MAIN_FOLDER>/%(playlist)s/%(autonumber)s-%(title)s.%(ext)s" '<playlist_address>'
+
+          #screen -dmS dl1 youtube-dl --yes-playlist -vif 18 -o "~/Storage/Study/tosort/DevTips/%(playlist)s/%(autonumber)s-%(title)s.%(ext)s" 'https://www.youtube.com/playlist?list=PLqGj3iMvMa4KlJn1pMYPVV3eYzxJlWcON'
+
+      ** my format
+
+        - default:
+        # youtube-dl --yes-playlist -vi -o "%(autonumber)s-%(title)s.%(ext)s" <playlist_address>
+
+        - in terminal with medium quality:
+        # youtube-dl --yes-playlist -vif 18 -o "%(autonumber)s-%(title)s.%(ext)s" <playlist_address>
+
+        - in screen detached
+        # screen -dmS <name-of-screen> youtube-dl --yes-playlist -vi -o "%(autonumber)s-%(title)s.%(ext)s" <playlist_address>
+
+        - use number of position in playlist
+
+        <...> -o %(playlist_index)s <...>
+
+      ** Output template examples
+        Note on Windows you may need to use double quotes instead of single.
+
+        $ youtube-dl --get-filename -o '%(title)s.%(ext)s' BaW_jenozKc
+        youtube-dl test video ''_ä↭𝕐.mp4    # All kinds of weird characters
+
+        $ youtube-dl --get-filename -o '%(title)s.%(ext)s' BaW_jenozKc --restrict-filenames
+        youtube-dl_test_video_.mp4          # A simple file name
+
+        # Download YouTube playlist videos in separate directory indexed by video order in a playlist
+        $ youtube-dl -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' https://www.youtube.com/playlist?list=PLwiyx1dc3P2JR9N8gQaQN_BCvlSlap7re
+
+        # Download all playlists of YouTube channel/user keeping each playlist in separate directory:
+        $ youtube-dl -o '%(uploader)s/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' https://www.youtube.com/user/TheLinuxFoundation/playlists
+
+        # Download Udemy course keeping each chapter in separate directory under MyVideos directory in your home
+        $ youtube-dl -u user -p password -o '~/MyVideos/%(playlist)s/%(chapter_number)s - %(chapter)s/%(title)s.%(ext)s' https://www.udemy.com/java-tutorial/
+
+        # Download entire series season keeping each series and each season in separate directory under C:/MyVideos
+        $ youtube-dl -o "C:/MyVideos/%(series)s/%(season_number)s - %(season)s/%(episode_number)s - %(episode)s.%(ext)s" http://videomore.ru/kino_v_detalayah/5_sezon/367617
+
+        # Stream the video being downloaded to stdout
+        $ youtube-dl -o - BaW_jenozKc
+
+      * simulation mode
+        to see all in sym mode: -s
+        # youtube-dl -s <playlist_address>
+
+      * to see formats
+        (select number of format): -F    (suggest to add -s parameter)
+        # youtube-dl -F <playlist_address>
