@@ -278,3 +278,9 @@
       * to see formats
         (select number of format): -F    (suggest to add -s parameter)
         # youtube-dl -F <playlist_address>
+
+* set brigtness to 100% while working at battery
+
+  # sudo setpci -v -H1 -s 00:01.00 BRIDGE_CONTROL=0
+
+  You could add that line to /etc/init.d/boot.local I suppose to call it automatically on boot. 
